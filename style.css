@@ -1,0 +1,119 @@
+/* GLobal Styles */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Navigation */ 
+
+header {
+  	border-bottom: 2px solid black;
+}
+header .container {
+	display: flex;
+}
+.Logo {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+    font-size: 30px;
+    width: 20%;
+    height: 80px;
+    background-color: white;
+    text-transform: uppercase;
+}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	width: 80%;
+}
+nav ul li {
+  	display: flex;
+  	align-items: center;
+	justify-content: center;
+	width: 150px;
+	background-color: #F54952;
+}
+nav ul li a {
+  	text-decoration: none;
+  	color: white;	
+}
+nav ul li:hover {
+  	background-color: #DC3E64;
+  	font-size: 20px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	display: flex;
+	background-image: url('http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAZlYtempkc3JGdVU');
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid;
+	height: 70vh;
+}
+.jumbotron h1 {
+	color: white;
+}
+
+/* Gallery */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Cards */
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	min-width: 200px;
+ 	min-height: 100px;
+ 	background-color: #C13277;
+ 	color: white;
+ 	transition: 0.5s;
+}
+.card:hover {
+	transform: scale(1.1);
+	background-color: #DC3E64;
+}
+
+/* Footer */
+
+footer {
+	background-color: #E7435C;
+	color: white;
+}
+footer .container {
+	display: flex;
+	height: 100px;
+	flex-wrap: wrap;
+}
+.copyright, .company, .contact-data {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.company {
+	flex-grow: 2;
+}
